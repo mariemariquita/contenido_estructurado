@@ -46,12 +46,12 @@ de menores de dad, mujeres, hombres y personas trans
 ##Prompt 11
 hasta ahorita contando los casos de genero y raza, cuantos son?
 
-##Prompt 15
+##Prompt 12
 y ahora quiero que me hagas la categoria de clase, que todos los casos sean de articulos, reportajes,
 videos y que ninguno este relacionado con el gobierno y que sean veridicos. necesito que sean
 alrededor de 10 y 15 casos
 
-##Prompt 16
+##Prompt 13
 ahora que están todos los casos dame el mismo formato de fecha y las fuentes en apa, igual la tabla
 con el resumen, pero en el de raza hiciste las sub categorias de comunidades, en este haz de zona
 geografica y qué casos son de extorsion y cuales son de desempleo
