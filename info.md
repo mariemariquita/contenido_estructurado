@@ -4,19 +4,19 @@
 
 ## Índice
 ∏
-- [I. Raza](#i-raza--casos-ordenados-cronológicamente-por-comunidad)
+- [I. Raza]
   - [Comunidad haitiana / africana (frontera EE.UU.-México)](#enero–marzo-2023--comunidad-haitiana--africana-frontera-eeuu-méxico)
   - [Comunidad camerunesa / africana negra (Louisiana)](#2020–2026-patrón-persistente--comunidad-camerunesa--africana-negra-louisiana)
   - [Comunidad surcoreana (Georgia)](#septiembre-2025--comunidad-surcoreana-georgia)
   - [Comunidad latina (Chicago)](#octubre-2025--comunidad-latina-chicago-illinois)
   - [Comunidad haitiana (Springfield, Ohio)](#agosto-2025--septiembre-2026-en-curso--comunidad-haitiana-springfield-ohio)
   - [Comunidad somalí (Minneapolis)](#diciembre-2025--febrero-2026--comunidad-somalí-minneapolis-minnesota)
-- [II. Género](#ii-género--casos-ordenados-cronológicamente-por-subcategoría)
+- [II. Género]
   - [Menores de edad](#menores-de-edad)
   - [Mujeres](#mujeres)
   - [Hombres](#hombres)
   - [Personas trans](#personas-trans)
-- [III. Clase](#iii-clase--casos-ordenados-por-zona-geográfica-y-fecha)
+- [III. Clase]
   - [Arkansas](#arkansas--junio-2016)
   - [Michigan](#michigan--octubre-2013--2015)
   - [Illinois (Chicago)](#illinois-chicago--2013–2020)
@@ -32,7 +32,7 @@
 
 ---
 
-## I. Raza — casos ordenados cronológicamente por comunidad
+## Raza
 
 ### Enero–marzo 2023 — Comunidad haitiana / africana (Frontera EE.UU.-México)
 
@@ -166,7 +166,7 @@
 
 ---
 
-## II. Género — casos ordenados cronológicamente por subcategoría
+## Género
 
 ### Menores de edad
 
@@ -270,7 +270,7 @@
 
 ---
 
-## III. Clase — casos ordenados por zona geográfica y fecha
+## Clase
 
 ### Arkansas — Junio 2016
 
@@ -458,6 +458,3 @@
 - The Wire. (s.f.). *Digital exclusion: Poor, elderly face the brunt of Aadhaar-based authentication errors.* [thewire.in](https://m.thewire.in/article/rights/digital-exclusion-poor-elderly-face-the-brunt-of-aadhaar-based-authentication-errors)
 - Economic and Political Weekly. (s.f.). *Aadhaar failures, food services, welfare.* [epw.in](https://www.epw.in/engage/article/aadhaar-failures-food-services-welfare)
 
----
-
-> **Nota sobre la clasificación Extorsión / Desempleo:** de los 11 casos de la categoría Clase, solo dos encajan estrictamente en esos dos tipos: MiDAS (Michigan) = Desempleo, y Robodebt (Australia) = Extorsión (cobro coactivo de deudas generadas algorítmicamente). El resto son otras formas de daño algorítmico por clase socioeconómica (salud, vivienda familiar, vigilancia laboral, subsidios).
