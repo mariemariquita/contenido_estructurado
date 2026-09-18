@@ -8,16 +8,33 @@
 */
 
 :root {
-  --color-background: #f4f4f0;
-  --color-text: #171717;
-  --color-accent: #5b3df5;
+  --color-background: #0f0e0e;
+  --color-text: #eeeeee;
+  --color-accent: #baeb19;
+  --colorreverse-accent: #f11b5f;
 
   --font-family-base: system-ui, Arial, Helvetica, sans-serif;
 
+  --font-display-var:"redaction-70", sans-serif;
+  --font-display-weight:700;
+  --font-display-style:normal;
+
+  --font-subtitle-var:"redaction-35", sans-serif;
+  --font-subtitle-weight:400;
+  --font-subtitle-style:italic;
+
+  --font-indice-var:"redaction", sans-serif;
+  --font-indice-weight-1:700;
+    --font-indice-weight-2:400;
+  --font-indice-style:normal;
+
   --font-size-body: 1rem;
-  --font-size-h1: 3rem;
+  --font-size-h1: 30rem;
   --font-size-h2: 2rem;
   --font-size-h3: 1.25rem;
+  --font-size-subtitle: 6.5rem;
+  --font-size-indice-titulo: 2rem;
+  --font-size-indice: 1.25rem;
 }
 
 /*
@@ -34,7 +51,7 @@
     Regla temporal para visualizar las cajas.
     Puede eliminarse cuando ya no sea necesaria.
   */
-  outline: 1px solid;
+  outline: 0px solid;
 }
 
 
@@ -46,7 +63,7 @@
   Define el sistema visual base del documento.
 */
 body {
-  margin: 0;
+  margin: 2rem;
 
   background-color: var(--color-background);
   color: var(--color-text);
@@ -64,13 +81,15 @@ body {
   CSS controla su representación visual.
 */
 
-h1 {
+.home-page h1 {
+  font-family: var(--font-display-var);
+  font-weight: var(--font-display-weight);
+  font-style: var(--font-display-style);
   font-size: var(--font-size-h1);
+  letter-spacing: 3rem;
+  margin-bottom: -10rem;
 }
 
-h2 {
-  font-size: var(--font-size-h2);
-}
 
 h3 {
   font-size: var(--font-size-h3);
@@ -87,9 +106,13 @@ h3 {
 
 a {
   color: var(--color-accent);
+  text-decoration: none;
 }
 
-
+a:hover {
+  color: var(--colorreverse-accent);
+  text-decoration: non;
+}
 /*
   ============================================================
   CONTENEDOR PRINCIPAL
@@ -109,7 +132,7 @@ main {
   width: 65%;
   min-width: 290px;
   max-width: 1240px;
-  margin: 0 auto;
+  margin: 1rem;
 }
 
 
@@ -121,6 +144,30 @@ main {
 
 header,
 main,
+.home-page header p {
+  font-family: var(--font-subtitle-var);
+  font-weight: var(--font-subtitle-weight);
+  font-style: var(--font-subtitle-style);
+  font-size: var(--font-size-subtitle);
+}
+
+h2 {
+  font-family: var(--font-indice-var);
+  font-weight: var(--font-indice-weight-1);
+  font-style: var(--font-indice-style);
+  font-size: var(--font-size-indice-titulo);
+}
+
+.lista-indice {
+  list-style: none;
+  padding-left: 0;
+  font-family: var(--font-indice-var);
+  font-size: var(--font-size-indice);
+  font-weight: var(--font-indice-weight-2);
+  font-style: var(--font-indice-style);
+  font-size: var(--font-size-indice);
+}
+
 footer {
   padding: 2rem;
 }
