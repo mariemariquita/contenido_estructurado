@@ -12,9 +12,7 @@
   --color-text: #eeeeee;
   --color-accent: #baeb19;
   --colorreverse-accent: #f11b5f;
-
   --font-family-base: system-ui, Arial, Helvetica, sans-serif;
-
   --font-display-var:"redaction-70", sans-serif;
   --font-display-weight:700;
   --font-display-style:normal;
@@ -25,16 +23,20 @@
 
   --font-indice-var:"redaction", sans-serif;
   --font-indice-weight-1:700;
-    --font-indice-weight-2:400;
+  --font-indice-weight-2:400;
   --font-indice-style:normal;
 
-  --font-size-body: 1rem;
-  --font-size-h1: 30rem;
+  --font-text-var: "redaction-10", sans-serif;
+  --font-text-weight: 400;
+  --font-text-style:normal;
+
+  --font-size-text: 1.5rem;
+  --font-size-h1: 27vw;
   --font-size-h2: 2rem;
   --font-size-h3: 1.25rem;
-  --font-size-subtitle: 6.5rem;
-  --font-size-indice-titulo: 2rem;
-  --font-size-indice: 1.25rem;
+  --font-size-subtitle: 6rem;
+  --font-size-indice-titulo: 4rem;
+  --font-size-indice: 3rem;
 }
 
 /*
@@ -63,13 +65,12 @@
   Define el sistema visual base del documento.
 */
 body {
-  margin: 2rem;
-
   background-color: var(--color-background);
   color: var(--color-text);
-
   font-family: var(--font-family-base);
   font-size: var(--font-size-body);
+  padding: 0;
+  margin: 0;
 }
 
 /*
@@ -81,15 +82,68 @@ body {
   CSS controla su representación visual.
 */
 
+header#main-header {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 0 15px;
+}
+
+header#main-header a {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  font-size: 2rem;
+  color: var(--color-accent);
+}
 .home-page h1 {
   font-family: var(--font-display-var);
   font-weight: var(--font-display-weight);
   font-style: var(--font-display-style);
   font-size: var(--font-size-h1);
   letter-spacing: 3rem;
-  margin-bottom: -10rem;
+  margin-bottom: -9rem;
 }
 
+.titulo{
+  font-family: var(--font-display-var);
+  font-weight: var(--font-display-weight);
+  font-style: var(--font-display-style);
+  font-size: var(--font-size-h1);
+  letter-spacing: 0.15em;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  text-align: left;
+  text-indent: .1em;
+  line-height: .8em;
+}
+
+
+.titulo#titulo-genero {
+  font-size: 19.4vw;
+  letter-spacing: 0.1em;
+  position: absolute;
+  /* bottom: 0; */
+  left: 0;
+}
+
+.titulo#titulo-clase {
+  font-size: 23.7vw;
+  letter-spacing: 0.1em;
+  position: absolute;
+  /* bottom: 0; */
+  left: 0;
+}
+
+.titulo + p {
+  margin: 0;
+  font-size: 6vw;
+  line-height: 1em;
+}
 
 h3 {
   font-size: var(--font-size-h3);
@@ -144,18 +198,30 @@ main {
 
 header,
 main,
-.home-page header p {
+
+.subtitulo p {
   font-family: var(--font-subtitle-var);
   font-weight: var(--font-subtitle-weight);
   font-style: var(--font-subtitle-style);
   font-size: var(--font-size-subtitle);
+  margin-block-end: 0;
+  width: 100%;
 }
+
 
 h2 {
   font-family: var(--font-indice-var);
   font-weight: var(--font-indice-weight-1);
   font-style: var(--font-indice-style);
   font-size: var(--font-size-indice-titulo);
+}
+
+.descriptor{
+  margin: 2rem 2rem 4rem 2rem;
+  font-family: var(--font-text-var);
+  font-weight: var(--font-text-weight);
+  font-style: var(--font-text-style);
+  font-size: var(--font-size-text);
 }
 
 .lista-indice {
