@@ -9,34 +9,32 @@
 
 :root {
   --color-background: #0f0e0e;
-  --color-text: #eeeeee;
+  --color-text: #f1f1f1;
   --color-accent: #baeb19;
-  --colorreverse-accent: #f11b5f;
-  --font-family-base: system-ui, Arial, Helvetica, sans-serif;
-  --font-display-var:"redaction-70", sans-serif;
-  --font-display-weight:700;
-  --font-display-style:normal;
+  --color-hover: #f11b5f;
+  --font-family-base: "input-serif", system-ui, Arial, Helvetica, sans-serif;
+  
+  --font-display-var: "redaction-70", sans-serif;
+  --font-display-weight: 700
+  --font-display-style: normal;
 
   --font-subtitle-var:"redaction-35", sans-serif;
   --font-subtitle-weight:400;
-  --font-subtitle-style:italic;
-
-  --font-indice-var:"redaction", sans-serif;
-  --font-indice-weight-1:700;
-  --font-indice-weight-2:400;
-  --font-indice-style:normal;
-
-  --font-text-var: "redaction-10", sans-serif;
+  --font-subtitle-style-italic:italic;
+  --font-subtitle-style-normal:normal;
+  
+  --font-text-var: "redaction-20", serif;
   --font-text-weight: 400;
-  --font-text-style:normal;
-
-  --font-size-text: 1.5rem;
+  --font-text-style: normal;
+  
+  --font-size-body: 5vw;
   --font-size-h1: 27vw;
   --font-size-h2: 2rem;
   --font-size-h3: 1.25rem;
-  --font-size-subtitle: 6rem;
-  --font-size-indice-titulo: 4rem;
-  --font-size-indice: 3rem;
+  --font-size-text: 1.5rem;
+  --font-size-sub: 6rem;
+  --font-size-ind: 3rem;
+  --font-size-ind-t: 4rem;
 }
 
 /*
@@ -49,11 +47,6 @@
 
 * {
   box-sizing: border-box;
-  /*
-    Regla temporal para visualizar las cajas.
-    Puede eliminarse cuando ya no sea necesaria.
-  */
-  outline: 0px solid;
 }
 
 
@@ -65,12 +58,11 @@
   Define el sistema visual base del documento.
 */
 body {
+  margin: 0;
   background-color: var(--color-background);
   color: var(--color-text);
   font-family: var(--font-family-base);
   font-size: var(--font-size-body);
-  padding: 0;
-  margin: 0;
 }
 
 /*
@@ -81,7 +73,6 @@ body {
   HTML define la jerarquía.
   CSS controla su representación visual.
 */
-
 header#main-header {
   position: relative;
   width: 100%;
@@ -91,7 +82,6 @@ header#main-header {
   justify-content: flex-end;
   padding: 0 15px;
 }
-
 header#main-header a {
   position: absolute;
   top: 15px;
@@ -99,6 +89,14 @@ header#main-header a {
   font-size: 2rem;
   color: var(--color-accent);
 }
+
+
+.titulo + p {
+  margin: 0;
+  font-size: 6vw;
+  line-height: 1em;
+}
+
 .home-page h1 {
   font-family: var(--font-display-var);
   font-weight: var(--font-display-weight);
@@ -139,16 +137,120 @@ header#main-header a {
   left: 0;
 }
 
-.titulo + p {
-  margin: 0;
-  font-size: 6vw;
-  line-height: 1em;
+p {
+  font-family: var(--font-text-var);
+  font-weight: var(--font-text-weight);
+  font-style: var(--font-text-style);
+  font-size: var(--font-size-text);
+  margin: 3rem 0;
 }
 
-h3 {
-  font-size: var(--font-size-h3);
+.label p {
+  margin: 10rem;
+  font-family: var(--font-text-var);
+  font-weight: var(--font-text-weight);
+  font-style: var(--font-text-style-normal);
+  font-size: var(--font-size-text);
+}
+.header p {
+  margin: 1em 10rem 10rem 10rem;
+  font-family: var(--font-text-var);a
+  font-weight: var(--font-text-weight);
+  font-style: var(--font-text-style);
+  font-size: var(--font-size-text);
+}
+h2.label {
+  margin: 6rem 0rem 2.5rem 0rem;
+  font-family: var(--font-subtitle-var);
+  font-weight: var(--font-subtitle-weight);
+  font-style: var(--font-subtitle-style);
+  font-size: var(--font-size-body);
+}
+h2 small {
+      display: block;
+    font-size: .5em;
 }
 
+h2 i {
+      font-size: .5em;
+    display: block;
+}
+
+h3.label {
+  font-style: normal;
+  font-family: var(--font-subtitle-var);
+  font-size: var(--font-size-h2);
+  font-weight: var(--font-subtitle-weight);
+}
+
+h3.label time {
+  color: var(--color-accent);
+}
+
+#descriptor {
+  font-family: var(--font-text-var);
+  font-weight: var(--font-text-weight);
+  font-style: var(--font-text-style);
+  font-size: var(--font-size-text);
+  font-size: 2vw;
+}
+
+#indice-titulo {
+  font-family: var(--font-display-var);
+  font-weight: var(--font-display-weight);
+  font-style: var(--font-display-style);
+  font-size: var(--font-size-ind-t);
+  margin-bottom: 1rem;
+}
+
+.indice {
+  list-style: none;
+  padding-left: 0;
+  font-family: var(--font-text-var);
+  font-weight: var(--font-text-weight);
+  font-style: var(--font-text-style);
+  font-size: var(--font-size-ind);
+}
+
+ul {
+  font-family: var(--font-text-var);
+  font-weight: var(--font-text-weight);
+  font-style: var(--font-tex-style);
+  font-size: var(--font-size-body);
+}
+
+
+li {
+  font-family: var(--font-text-var);
+  font-weight: var(--font-text-weight);
+  font-style: var(--font-text-style);
+  font-size: var(--font-size-text);
+  margin: 1rem 0;
+}
+
+#home-p {
+  margin: 8rem 0rem 4rem 0rem;
+}
+
+summary {
+  font-family: var(--font-text-var);
+  font-weight: var(--font-text-weight);
+  font-style: var(--font-text-style);
+  font-size: var(--font-size-text);
+  margin: 2rem 0rem 2rem 0rem;
+}
+.date-container {
+  /* font-size: .75em; */
+  margin-bottom: .5em;
+}
+time {
+  font-weight: 600;
+}
+
+summary small {
+  display: block;
+  font-style: italic;
+}
 
 /*
   ============================================================
@@ -164,9 +266,11 @@ a {
 }
 
 a:hover {
-  color: var(--colorreverse-accent);
-  text-decoration: non;
+  color: var(--color-hover);
+  text-decoration: none;
 }
+
+
 /*
   ============================================================
   CONTENEDOR PRINCIPAL
@@ -182,22 +286,14 @@ a:hover {
   distribuye el espacio horizontal y centra la caja.
 */
 
+
+
 main {
   width: 65%;
   min-width: 290px;
   max-width: 1240px;
-  margin: 1rem;
+  margin: 0 auto;
 }
-
-
-/*
-  ============================================================
-  ESPACIADO BÁSICO
-  ============================================================
-*/
-
-header,
-main,
 
 .subtitulo p {
   font-family: var(--font-subtitle-var);
@@ -208,31 +304,12 @@ main,
   width: 100%;
 }
 
+/*
+  ============================================================
+  ESPACIADO BÁSICO
+  ============================================================
+*/
 
-h2 {
-  font-family: var(--font-indice-var);
-  font-weight: var(--font-indice-weight-1);
-  font-style: var(--font-indice-style);
-  font-size: var(--font-size-indice-titulo);
-}
-
-.descriptor{
-  margin: 2rem 2rem 4rem 2rem;
-  font-family: var(--font-text-var);
-  font-weight: var(--font-text-weight);
-  font-style: var(--font-text-style);
-  font-size: var(--font-size-text);
-}
-
-.lista-indice {
-  list-style: none;
-  padding-left: 0;
-  font-family: var(--font-indice-var);
-  font-size: var(--font-size-indice);
-  font-weight: var(--font-indice-weight-2);
-  font-style: var(--font-indice-style);
-  font-size: var(--font-size-indice);
-}
 
 footer {
   padding: 2rem;
