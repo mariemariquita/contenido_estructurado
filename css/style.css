@@ -34,7 +34,7 @@
   --font-size-text: 1.5rem;
   --font-size-sub: 6rem;
   --font-size-ind: 3rem;
-  --font-size-ind-t: 4rem;
+  --font-size-ind-t: 5.5rem;
 }
 
 /*
@@ -289,7 +289,7 @@ a:hover {
 
 
 main {
-  width: 65%;
+  width: 75%;
   min-width: 290px;
   max-width: 1240px;
   margin: 0 auto;
