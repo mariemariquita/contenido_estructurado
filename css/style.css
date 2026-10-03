@@ -154,7 +154,7 @@ p {
 }
 .header p {
   margin: 1em 10rem 10rem 10rem;
-  font-family: var(--font-text-var);a
+  font-family: var(--font-text-var);
   font-weight: var(--font-text-weight);
   font-style: var(--font-text-style);
   font-size: var(--font-size-text);
