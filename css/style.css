@@ -31,9 +31,9 @@
   --font-size-h1: 27vw;
   --font-size-h2: 2rem;
   --font-size-h3: 1.25rem;
-  --font-size-text: 1.5rem;
+  --font-size-text: 1.5vw;
   --font-size-sub: 6rem;
-  --font-size-h2-label: 5rem;
+  --font-size-h2-label: 5vw;
   --font-size-ind: 3rem;
   --font-size-ind-t: 5.5rem;
 }
